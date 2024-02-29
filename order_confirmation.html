@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header_menu" id="header_menu">
+        <div class="container-fluid px-0 shadow">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 ">
+        <a class="navbar-brand pl-5 pl-small-0" href="index.html">
+        <img src="data:image/png;base64,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" class="img img-fluid" width="120px"
+        alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span
+        class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="product.html">Product</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="category.html">Category</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+        role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+        </li> -->
+        </ul>
+        <div class="search mr-3">
+        <a href="search.html" class="btn btn-sm btn-outline-primary">
+        Search
+        </a>
+        </div>
+        <div class="cart">
+        <a href="cart.html">
+        <i class="fas fa-shopping-cart fa-2x"></i>
+        <span class="badge badge-pill badge-primary">24</span>
+        </a>
+        </div>
+        </div>
+        </nav>
+        </div>
+        </section>
+    <!-- ==============order_confirmation starts here============== -->
+<section class="order_confirmation py-5 my-5" id="order_confirmation">
+    <div class="container ">
+    <div class="section_title text-center mb-5">
+    <h1 class="text-capitalize">order confirmation</h1>
+    </div>
+    <div class="row">
+    <div class="col-md-6 mx-auto text-center">
+    <div>
+    <img src="assets/images/success_tick.png" class="img img-fluid"
+    alt="image">
+    </div>
+    <div>
+    <h2>Thankyou for your purchase!</h2>
+    <h6>A confirmation email has been sent to
+    <b>xyz@gmail.com</b></h6>
+    <h6><span class="mr-2">Order
+    No:</span><span><b>123123123123</b></span></h6>
+    <h6>
+    <span class="mr-2">Order Status:</span>
+    <span>
+    <b>
+    <span class="badge badge-danger">Pending</span>
+    </b>
+    </span>
+    </h6>
+    <a href="index.html" class="btn btn-primary btn-lg mt-5">Return to
+    Home</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- ==============order confirmation ends here============== -->
+</body>
+</html>
